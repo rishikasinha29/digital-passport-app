@@ -1,70 +1,333 @@
-# Getting Started with Create React App
+<div align="center">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🛂 Digital Passport App
 
-## Available Scripts
+### **Secure Digital Identity Verification Platform**
 
-In the project directory, you can run:
+*A React-based simulation of a digital passport ecosystem that demonstrates secure credential issuance, digital wallet management, and identity verification.*
 
-### `npm start`
+<p>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react\&logoColor=black)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38BDF8?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=for-the-badge\&logo=javascript\&logoColor=black)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Academic Project](https://img.shields.io/badge/Academic-Project-blue?style=for-the-badge)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</p>
 
-### `npm test`
+**Issue • Store • Verify • Protect Digital Credentials**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+</div>
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 📑 Table of Contents
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [Overview](#-overview)
+* [Features](#-features)
+* [Application Preview](#-application-preview)
+* [Architecture](#-architecture)
+* [Technology Stack](#-technology-stack)
+* [Project Structure](#-project-structure)
+* [Installation](#-installation)
+* [How It Works](#-how-it-works)
+* [Application Workflow](#-application-workflow)
+* [Future Enhancements](#-future-enhancements)
+* [Learning Outcomes](#-learning-outcomes)
+* [Contributing](#-contributing)
+* [Author](#-author)
+* [License](#-license)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+# 📖 Overview
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Digital Passport App is a web-based simulation of a modern digital identity ecosystem. The application demonstrates how trusted organizations can issue digital credentials, how users can securely store those credentials inside a digital wallet, and how third-party organizations can verify them without requiring physical documents.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project is designed for educational purposes to showcase concepts related to digital identity, credential management, and identity verification workflows.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# ✨ Features
 
-## Learn More
+## 🏛️ Issuer Simulation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Simulates credential issuance
+* Generates digital passport credentials
+* Transfers credentials securely to the user's wallet
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 👛 Digital Wallet
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+* Stores issued credentials
+* Displays passport information
+* Provides a simple credential management interface
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ✅ Verifier Simulation
 
-### Making a Progressive Web App
+* Simulates identity verification
+* Validates issued credentials
+* Demonstrates secure verification workflow
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 🎨 Modern User Interface
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* Responsive layout
+* Built with React
+* Styled using Tailwind CSS
+* Clean and intuitive design
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# 📸 Application Preview
 
-### `npm run build` fails to minify
+> Replace these placeholders with actual screenshots from your application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```text
+screenshots/
+│
+├── home.png
+├── wallet.png
+├── issuer.png
+├── verifier.png
+└── demo.gif
+```
+
+```markdown
+![Home](screenshots/home.png)
+
+![Digital Wallet](screenshots/wallet.png)
+
+![Issuer Simulation](screenshots/issuer.png)
+
+![Verifier Simulation](screenshots/verifier.png)
+
+![Application Demo](screenshots/demo.gif)
+```
+
+---
+
+# 🏗️ Architecture
+
+```mermaid
+flowchart LR
+
+A[Issuer]
+
+-->B[Digital Credential]
+
+B --> C[Digital Wallet]
+
+C --> D[Credential Storage]
+
+D --> E[Verifier]
+
+E --> F[Verification Result]
+```
+
+---
+
+# 💻 Technology Stack
+
+| Category        | Technology       |
+| --------------- | ---------------- |
+| Frontend        | React 19         |
+| Styling         | Tailwind CSS     |
+| Language        | JavaScript (ES6) |
+| Build Tool      | Create React App |
+| Version Control | Git & GitHub     |
+
+---
+
+# 📂 Project Structure
+
+```text
+digital-passport-app/
+
+├── public/
+│
+├── src/
+│   ├── components/
+│   │   ├── WalletView.js
+│   │   ├── IssuerSimulation.js
+│   │   └── VerifierSimulation.js
+│   │
+│   ├── App.js
+│   ├── index.js
+│   ├── App.css
+│   └── index.css
+│
+├── package.json
+├── tailwind.config.js
+└── README.md
+```
+
+---
+
+# 🚀 Installation
+
+## Clone the Repository
+
+```bash
+git clone https://github.com/rishikasinha29/digital-passport-app.git
+```
+
+## Navigate to the Project
+
+```bash
+cd digital-passport-app
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Start the Development Server
+
+```bash
+npm start
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+---
+
+# ⚙️ How It Works
+
+### Step 1 — Issue Credential
+
+The Issuer Simulation creates a digital passport credential representing a trusted organization issuing identity information.
+
+---
+
+### Step 2 — Store Credential
+
+The issued credential is stored inside the Digital Wallet where it can be managed by the user.
+
+---
+
+### Step 3 — Verify Credential
+
+The Verifier Simulation checks the stored credential and demonstrates a basic verification process.
+
+---
+
+# 🔄 Application Workflow
+
+```mermaid
+graph TD
+
+A[Issuer]
+
+-->B[Create Digital Passport]
+
+-->C[Store in Wallet]
+
+-->D[User Shares Credential]
+
+-->E[Verifier Checks Credential]
+
+-->F[Verification Successful]
+```
+
+---
+
+# 📊 Project Highlights
+
+| Feature                 | Status |
+| ----------------------- | ------ |
+| Credential Issuance     | ✅      |
+| Digital Wallet          | ✅      |
+| Credential Verification | ✅      |
+| React Components        | ✅      |
+| Responsive UI           | ✅      |
+| Tailwind CSS            | ✅      |
+
+---
+
+# 🔮 Future Enhancements
+
+* QR Code-based credential sharing
+* Secure credential encryption
+* Blockchain-backed credential verification
+* Decentralized Identity (DID) support
+* Verifiable Credentials (VC) compliance
+* Biometric authentication
+* Multi-user support
+* Cloud database integration
+* Digital signature verification
+* Mobile application support
+
+---
+
+# 🎓 Learning Outcomes
+
+This project demonstrates concepts including:
+
+* React Component Architecture
+* State Management
+* Tailwind CSS
+* Digital Identity Systems
+* Credential Issuance
+* Identity Verification
+* Secure Information Sharing
+* Frontend Application Development
+
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push your branch.
+5. Open a Pull Request.
+
+---
+
+# 👩‍💻 Author
+
+**Rishika Sinha**
+
+Computer Science Engineering Student
+
+VIT Bhopal University
+
+📧 **Email:** [rishikasinha2909@gmail.com](mailto:rishikasinha2909@gmail.com)
+
+🐙 **GitHub:** https://github.com/rishikasinha29
+
+💼 **LinkedIn:** https://www.linkedin.com/in/rishika-sinha-38636828a
+
+---
+
+# 📜 License
+
+This project was developed for educational and portfolio purposes.
+
+© 2026 Rishika Sinha. All Rights Reserved.
+
+---
+
+<div align="center">
+
+## ⭐ Support
+
+If you found this project interesting, consider giving it a ⭐ on GitHub.
+
+**Building the future of secure digital identity. 🛂**
+
+</div>
